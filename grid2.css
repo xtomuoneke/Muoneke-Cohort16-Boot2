@@ -1,0 +1,63 @@
+.mcontainer{
+    background-color: rgb(34, 23, 23);
+    width: 80%;
+    margin: auto;
+}
+
+
+.container{
+    color: white;
+   
+  display: grid;
+  height: 100vh; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 0.4fr; 
+  grid-template-areas: "main main main" 
+  "sidebar content1 content1"
+  "sidebar content2 content3"
+  "footer footer footer";
+  grid-gap: 1rem;
+  
+}
+/* Adding the background colours of the elements */
+main{
+    background-color: purple;
+    grid-area: main;
+    text-align: center;
+    margin-top: 10px;
+}
+#sidebar{
+    background-color: green;
+    grid-area: sidebar;
+    text-align: center;
+}
+#content1{
+    background-color: blue;
+    grid-area: content1;
+    text-align: center;
+}
+#content2{
+    background-color: blue;
+    grid-area: content2;
+    text-align: center;
+}
+#content3{
+    background-color: blue;
+    grid-area: content3;
+    text-align: center;
+}
+footer{
+    background-color: purple;
+    grid-area: footer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.just{
+    padding-top: 80px;
+}
+.just.side{
+    padding-top: 200px;
+}
+.same{
+    padding-top: 20px;
+}

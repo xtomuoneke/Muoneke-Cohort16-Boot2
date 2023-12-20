@@ -1,0 +1,86 @@
+/* .container{
+  color: white;
+  display: grid;
+  height: 100vh; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1fr 1fr; 
+  grid-template-areas: 
+  grid-gap: 1rem;
+  
+} */
+.mcontainer{
+    background-color: aqua;
+    width: 80%;
+    margin: auto;
+  }
+  .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 85%;
+    margin: auto;
+    color: white;
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr;
+    grid-template-areas: "main heading1 heading2 heading3"
+    "sidebar mainbar mainbar endbar"
+    "sidebar footer footbar endbar";
+  }
+  /* Adding the background colours of the elements */
+  main{
+    background-color: black;
+    grid-area: main;
+    text-align: center;
+  }
+  #heading1{
+    background-color: skyblue;
+    grid-area: heading1;
+    text-align: center;
+  }
+  #heading2{
+    background-color: aquamarine;
+    grid-area: heading2;
+    text-align: center;
+  }
+  #heading3{
+    background-color: black;
+    grid-area: heading3;
+    text-align: center;
+  }
+    #sidebar{
+      background-color: darkslategrey;
+      grid-area: sidebar;
+      text-align: center;
+    
+    }
+    #mainbar{
+      background-color: black;
+      grid-area: mainbar;
+      text-align: center;
+    }
+    #endbar{
+      background-color: darkslategrey;
+      grid-area: endbar;
+      text-align: center;
+    }
+    footer{
+      background-color: skyblue;
+      grid-area: footer;
+      text-align: center;
+    }
+    #footbar{
+      background-color: aquamarine;
+      grid-area: footbar;
+      text-align: center;
+    }
+    .just{
+      padding-top: 80px;
+  }
+  /* .just.side{
+      padding-top: 200px;
+  }
+  .same{
+      padding-top: 20px;
+  } */
+  
